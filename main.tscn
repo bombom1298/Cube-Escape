@@ -46,3 +46,13 @@ mesh = SubResource("BoxMesh_0xm2m")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cube" unique_id=623899056]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 0)
 shape = SubResource("BoxShape3D_h2yge")
+
+[node name="Button" type="StaticBody3D" parent="." unique_id=320610078]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Button" unique_id=1690971330]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Button" unique_id=1737128610]
+
+[node name="Area3D" type="Area3D" parent="Button" unique_id=941761158]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Button/Area3D" unique_id=1056136116]
