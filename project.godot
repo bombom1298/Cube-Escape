@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Cube Escape"
+run/main_scene="uid://beg4n2x1eaqv8"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
