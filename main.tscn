@@ -5,6 +5,8 @@ size = Vector3(2.62146, 1, 1.0289307)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ig7tw"]
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7dm0k"]
+
 [node name="Main" type="Node3D" unique_id=1110585777]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=920241564]
@@ -16,3 +18,12 @@ shape = SubResource("BoxShape3D_7dm0k")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1663006738]
 transform = Transform3D(26, 0, 0, 0, 1, 0, 0, 0, 10, -0.5728092, 0, -0.06782246)
 mesh = SubResource("BoxMesh_ig7tw")
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=274964154]
+
+[node name="Camera3D" type="Camera3D" parent="Player" unique_id=390457135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1679781931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4702091, -0.18345094)
+shape = SubResource("CapsuleShape3D_7dm0k")
