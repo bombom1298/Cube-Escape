@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://beg4n2x1eaqv8"]
 
+[ext_resource type="Script" uid="uid://o8u0h4wf3q08" path="res://player.gd" id="1_ig7tw"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
 size = Vector3(2.62146, 1, 1.0289307)
 
@@ -20,6 +22,7 @@ transform = Transform3D(26, 0, 0, 0, 1, 0, 0, 0, 10, -0.5728092, 0, -0.06782246)
 mesh = SubResource("BoxMesh_ig7tw")
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=274964154]
+script = ExtResource("1_ig7tw")
 
 [node name="Camera3D" type="Camera3D" parent="Player" unique_id=390457135]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
