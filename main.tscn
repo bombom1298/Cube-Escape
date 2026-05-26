@@ -56,3 +56,12 @@ shape = SubResource("BoxShape3D_h2yge")
 [node name="Area3D" type="Area3D" parent="Button" unique_id=941761158]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Button/Area3D" unique_id=1056136116]
+
+[node name="Door" type="StaticBody3D" parent="." unique_id=1477917517]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, 0.5)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Door" unique_id=1211409542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, 0.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Door" unique_id=1493129430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, 0.5)
