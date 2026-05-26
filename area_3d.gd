@@ -1,0 +1,3 @@
+func _on_body_entered(body):
+	if body.name == "Player":
+		print("YOU WIN")
